@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8304c424a7be88b218dd14a56d9e1860",
+    "content-hash": "0e7e635496e4b9b6206d1d704d5ecf07",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -993,6 +993,88 @@
             "time": "2023-08-10T19:36:49+00:00"
         },
         {
+            "name": "dystcz/lunar-api",
+            "version": "0.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dystcz/lunar-api.git",
+                "reference": "830710235485e0efa6839e89f7266eaae21794b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dystcz/lunar-api/zipball/830710235485e0efa6839e89f7266eaae21794b4",
+                "reference": "830710235485e0efa6839e89f7266eaae21794b4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^10.0",
+                "laravel-json-api/hashids": "^2.0",
+                "laravel-json-api/laravel": "^3.0",
+                "laravel-json-api/non-eloquent": "^3.0",
+                "lunarphp/lunar": "^0.8",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "barryvdh/laravel-ide-helper": "^2.13",
+                "driftingly/rector-laravel": "^0.17.0",
+                "laravel-json-api/testing": "^2.1",
+                "laravel/pint": "^1.7",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "rector/rector": "^0.15.23",
+                "spatie/laravel-ray": "^1.32"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dystcz\\LunarApi\\LunarApiServiceProvider",
+                        "Dystcz\\LunarApi\\JsonApiServiceProvider",
+                        "Dystcz\\LunarApi\\LunarApiHashidsServiceProvider"
+                    ],
+                    "aliases": {
+                        "LunarApi": "Dystcz\\LunarApi\\Facade\\LunarApi"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dystcz\\LunarApi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Theimer",
+                    "email": "jakub@dy.st",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Marek Lőrincz",
+                    "email": "marek@dy.st",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Lunar API",
+            "homepage": "https://github.com/dystcz/lunar-api",
+            "keywords": [
+                "dystcz",
+                "laravel",
+                "lunar",
+                "lunar-api",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/dystcz/lunar-api/issues",
+                "source": "https://github.com/dystcz/lunar-api/tree/0.8.1"
+            },
+            "time": "2024-02-09T11:49:14+00:00"
+        },
+        {
             "name": "egulias/email-validator",
             "version": "4.0.2",
             "source": {
@@ -1129,6 +1211,76 @@
                 }
             ],
             "time": "2023-10-12T05:21:21+00:00"
+        },
+        {
+            "name": "graham-campbell/manager",
+            "version": "v5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Laravel-Manager.git",
+                "reference": "5c9e1e4b8f9ef5fc904545c617b83efa46d1bd09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/5c9e1e4b8f9ef5fc904545c617b83efa46d1bd09",
+                "reference": "5c9e1e4b8f9ef5fc904545c617b83efa46d1bd09",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.75 || ^9.0 || ^10.0 || ^11.0",
+                "illuminate/support": "^8.75 || ^9.0 || ^10.0 || ^11.0",
+                "php": "^7.4.15 || ^8.0.2"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^4.1",
+                "graham-campbell/testbench-core": "^4.1",
+                "mockery/mockery": "^1.6.6",
+                "phpunit/phpunit": "^9.6.15 || ^10.5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\Manager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                }
+            ],
+            "description": "Manager Provides Some Manager Functionality For Laravel",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Laravel Manager",
+                "Laravel-Manager",
+                "connector",
+                "framework",
+                "interface",
+                "laravel",
+                "manager"
+            ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Laravel-Manager/issues",
+                "source": "https://github.com/GrahamCampbell/Laravel-Manager/tree/v5.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/manager",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-12-03T23:16:15+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -1604,6 +1756,75 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "hashids/hashids",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinkla/hashids.git",
+                "reference": "197171016b77ddf14e259e186559152eb3f8cf33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinkla/hashids/zipball/197171016b77ddf14e259e186559152eb3f8cf33",
+                "reference": "197171016b77ddf14e259e186559152eb3f8cf33",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Required to use BC Math arbitrary precision mathematics (*).",
+                "ext-gmp": "Required to use GNU multiple precision mathematics (*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hashids\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com"
+                },
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@doubledip.se"
+                }
+            ],
+            "description": "Generate short, unique, non-sequential ids (like YouTube and Bitly) from numbers",
+            "homepage": "https://hashids.org/php",
+            "keywords": [
+                "bitly",
+                "decode",
+                "encode",
+                "hash",
+                "hashid",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/hashids/issues",
+                "source": "https://github.com/vinkla/hashids/tree/5.0.2"
+            },
+            "time": "2023-02-23T15:00:54+00:00"
+        },
+        {
             "name": "intervention/image",
             "version": "2.7.2",
             "source": {
@@ -1749,6 +1970,680 @@
                 "source": "https://github.com/lazychaser/laravel-nestedset/tree/v6.0.3"
             },
             "time": "2023-11-29T15:32:59+00:00"
+        },
+        {
+            "name": "laravel-json-api/core",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/core.git",
+                "reference": "7cccc6abaa8907cc8dbca66fd6f378dd237e9191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/core/zipball/7cccc6abaa8907cc8dbca66fd6f378dd237e9191",
+                "reference": "7cccc6abaa8907cc8dbca66fd6f378dd237e9191",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^10.0",
+                "illuminate/http": "^10.0",
+                "illuminate/support": "^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Core\\": "src/Core",
+                    "LaravelJsonApi\\Contracts\\": "src/Contracts"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Contracts and support classes for Laravel JSON:API packages.",
+            "homepage": "https://github.com/laravel-json-api/core",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/core/issues",
+                "source": "https://github.com/laravel-json-api/core/tree/v3.3.0"
+            },
+            "time": "2023-11-08T17:57:40+00:00"
+        },
+        {
+            "name": "laravel-json-api/eloquent",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/eloquent.git",
+                "reference": "5398cf60925343a58b1267194f7d821bf1b40855"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/eloquent/zipball/5398cf60925343a58b1267194f7d821bf1b40855",
+                "reference": "5398cf60925343a58b1267194f7d821bf1b40855",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/database": "^10.0",
+                "illuminate/support": "^10.0",
+                "laravel-json-api/core": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Eloquent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Serialize Eloquent models as JSON:API resources.",
+            "homepage": "https://github.com/laravel-json-api/eloquent",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/eloquent/issues",
+                "source": "https://github.com/laravel-json-api/eloquent/tree/v3.1.0"
+            },
+            "time": "2023-10-29T13:58:22+00:00"
+        },
+        {
+            "name": "laravel-json-api/encoder-neomerx",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/encoder-neomerx.git",
+                "reference": "30dbfe08be6680408334e6e6dcdeabf0114418bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/encoder-neomerx/zipball/30dbfe08be6680408334e6e6dcdeabf0114418bf",
+                "reference": "30dbfe08be6680408334e6e6dcdeabf0114418bf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^10.0",
+                "illuminate/support": "^10.0",
+                "laravel-json-api/core": "^3.0",
+                "laravel-json-api/neomerx-json-api": "^5.0.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "LaravelJsonApi\\Encoder\\Neomerx\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Encoder\\Neomerx\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Encode JSON:API resources using the neomerx/json-api package.",
+            "homepage": "https://github.com/laravel-json-api/encoder-neomerx",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/encoder-neomerx/issues",
+                "source": "https://github.com/laravel-json-api/encoder-neomerx/tree/v3.1.1"
+            },
+            "time": "2023-11-20T18:29:23+00:00"
+        },
+        {
+            "name": "laravel-json-api/exceptions",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/exceptions.git",
+                "reference": "417bc8a73460532982abdb2abe5f7a51bba23483"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/exceptions/zipball/417bc8a73460532982abdb2abe5f7a51bba23483",
+                "reference": "417bc8a73460532982abdb2abe5f7a51bba23483",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^10.0",
+                "illuminate/pipeline": "^10.0",
+                "laravel-json-api/core": "^3.0",
+                "laravel-json-api/validation": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel-json-api/testing": "^2.0",
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Exceptions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "JSON:API exception parsing for Laravel applications.",
+            "homepage": "https://github.com/laravel-json-api/exceptions",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/exceptions/issues",
+                "source": "https://github.com/laravel-json-api/exceptions/tree/v2.1.0"
+            },
+            "time": "2023-11-08T18:04:39+00:00"
+        },
+        {
+            "name": "laravel-json-api/hashids",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/hashids.git",
+                "reference": "3d7a6f0f7e87a88b333530a9e564f7eebec34f0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/hashids/zipball/3d7a6f0f7e87a88b333530a9e564f7eebec34f0d",
+                "reference": "3d7a6f0f7e87a88b333530a9e564f7eebec34f0d",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-json-api/core": "^3.0",
+                "laravel-json-api/eloquent": "^3.0",
+                "php": "^8.1",
+                "vinkla/hashids": "^11.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\HashIds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Encode model IDs to JSON:API resource IDs.",
+            "homepage": "https://github.com/laravel-json-api/hashids",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/hashids/issues",
+                "source": "https://github.com/laravel-json-api/hashids/tree/v2.0.0"
+            },
+            "time": "2023-02-27T18:09:11+00:00"
+        },
+        {
+            "name": "laravel-json-api/laravel",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/laravel.git",
+                "reference": "3ebee3b4d2c6d03113af9c4f2ef24d3a44bfbf97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/laravel/zipball/3ebee3b4d2c6d03113af9c4f2ef24d3a44bfbf97",
+                "reference": "3ebee3b4d2c6d03113af9c4f2ef24d3a44bfbf97",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel-json-api/core": "^3.3",
+                "laravel-json-api/eloquent": "^3.1",
+                "laravel-json-api/encoder-neomerx": "^3.1",
+                "laravel-json-api/exceptions": "^2.1",
+                "laravel-json-api/spec": "^2.0",
+                "laravel-json-api/validation": "^3.0",
+                "laravel/framework": "^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel-json-api/testing": "^2.1",
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.x-dev"
+                },
+                "laravel": {
+                    "aliases": {
+                        "JsonApi": "LaravelJsonApi\\Core\\Facades\\JsonApi",
+                        "JsonApiRoute": "LaravelJsonApi\\Laravel\\Facades\\JsonApiRoute"
+                    },
+                    "providers": [
+                        "LaravelJsonApi\\Laravel\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "JSON:API for Laravel applications.",
+            "homepage": "https://github.com/laravel-json-api/laravel",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/laravel/issues",
+                "source": "https://github.com/laravel-json-api/laravel/tree/v3.3.0"
+            },
+            "time": "2024-02-14T19:10:53+00:00"
+        },
+        {
+            "name": "laravel-json-api/neomerx-json-api",
+            "version": "v5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/neomerx-json-api.git",
+                "reference": "00841feae83ab95f4490c6f2086f02f298293381"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/neomerx-json-api/zipball/00841feae83ab95f4490c6f2086f02f298293381",
+                "reference": "00841feae83ab95f4490c6f2086f02f298293381",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.17",
+                "mockery/mockery": "^1.4.4",
+                "phpmd/phpmd": "^2.11.1",
+                "phpunit/phpunit": "^9.5.10",
+                "scrutinizer/ocular": "^1.8",
+                "squizlabs/php_codesniffer": "^3.6.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/I18n/format.php"
+                ],
+                "psr-4": {
+                    "Neomerx\\JsonApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "neomerx",
+                    "email": "info@neomerx.com"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Framework agnostic JSON API (jsonapi.org) implementation",
+            "homepage": "https://github.com/neomerx/json-api",
+            "keywords": [
+                "JSON-API",
+                "api",
+                "json",
+                "jsonapi",
+                "jsonapi.org",
+                "neomerx"
+            ],
+            "support": {
+                "issues": "https://github.com/neomerx/json-api/issues",
+                "source": "https://github.com/laravel-json-api/neomerx-json-api/tree/v5.0.2"
+            },
+            "time": "2023-05-29T14:50:09+00:00"
+        },
+        {
+            "name": "laravel-json-api/non-eloquent",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/non-eloquent.git",
+                "reference": "ade25785cee83efb6ddd50728cfd65a04b6bd8ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/non-eloquent/zipball/ade25785cee83efb6ddd50728cfd65a04b6bd8ef",
+                "reference": "ade25785cee83efb6ddd50728cfd65a04b6bd8ef",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-json-api/core": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\NonEloquent\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Construct JSON:API resources for non-Eloquent classes.",
+            "homepage": "https://github.com/laravel-json-api/non-eloquent",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/non-eloquent/issues",
+                "source": "https://github.com/laravel-json-api/non-eloquent/tree/v3.0.0"
+            },
+            "time": "2023-02-14T19:27:27+00:00"
+        },
+        {
+            "name": "laravel-json-api/spec",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/spec.git",
+                "reference": "8357dda47642593ffefa07c8fd801cc4cfa1452e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/spec/zipball/8357dda47642593ffefa07c8fd801cc4cfa1452e",
+                "reference": "8357dda47642593ffefa07c8fd801cc4cfa1452e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^10.0",
+                "illuminate/pipeline": "^10.0",
+                "illuminate/support": "^10.0",
+                "laravel-json-api/core": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "LaravelJsonApi\\Spec\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Spec\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Validate JSON documents for compliance with the JSON:API specification.",
+            "homepage": "https://github.com/laravel-json-api/spec",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/spec/issues",
+                "source": "https://github.com/laravel-json-api/spec/tree/v2.0.1"
+            },
+            "time": "2023-10-29T14:14:31+00:00"
+        },
+        {
+            "name": "laravel-json-api/validation",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/validation.git",
+                "reference": "d28eed0c1658a905abe65cca9e5624aca8139f29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/validation/zipball/d28eed0c1658a905abe65cca9e5624aca8139f29",
+                "reference": "d28eed0c1658a905abe65cca9e5624aca8139f29",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^10.0",
+                "illuminate/support": "^10.0",
+                "laravel-json-api/core": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^9.5.28"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "LaravelJsonApi\\Validation\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Validation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Laravel validation for JSON:API resources.",
+            "homepage": "https://github.com/laravel-json-api/validation",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/validation/issues",
+                "source": "https://github.com/laravel-json-api/validation/tree/v3.0.0"
+            },
+            "time": "2023-02-14T19:18:31+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5366,20 +6261,20 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "ee0f7ed5cf298cc019431bb3b3977ebc52b86229"
+                "reference": "ec60a4edf94e63b0556b6a0888548bb400a3a3be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ee0f7ed5cf298cc019431bb3b3977ebc52b86229",
-                "reference": "ee0f7ed5cf298cc019431bb3b3977ebc52b86229",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ec60a4edf94e63b0556b6a0888548bb400a3a3be",
+                "reference": "ec60a4edf94e63b0556b6a0888548bb400a3a3be",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -5411,7 +6306,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v6.4.3"
+                "source": "https://github.com/symfony/css-selector/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -5427,7 +6322,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -5573,24 +6468,24 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "ae9d3a6f3003a6caf56acd7466d8d52378d44fef"
+                "reference": "834c28d533dd0636f910909d01b9ff45cc094b5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/ae9d3a6f3003a6caf56acd7466d8d52378d44fef",
-                "reference": "ae9d3a6f3003a6caf56acd7466d8d52378d44fef",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/834c28d533dd0636f910909d01b9ff45cc094b5e",
+                "reference": "834c28d533dd0636f910909d01b9ff45cc094b5e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/event-dispatcher-contracts": "^2.5|^3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<5.4",
+                "symfony/dependency-injection": "<6.4",
                 "symfony/service-contracts": "<2.5"
             },
             "provide": {
@@ -5599,13 +6494,13 @@
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
-                "symfony/error-handler": "^5.4|^6.0|^7.0",
-                "symfony/expression-language": "^5.4|^6.0|^7.0",
-                "symfony/http-foundation": "^5.4|^6.0|^7.0",
+                "symfony/config": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/error-handler": "^6.4|^7.0",
+                "symfony/expression-language": "^6.4|^7.0",
+                "symfony/http-foundation": "^6.4|^7.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0"
+                "symfony/stopwatch": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -5633,7 +6528,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.3"
+                "source": "https://github.com/symfony/event-dispatcher/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -5649,7 +6544,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -7084,20 +7979,20 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "7a14736fb179876575464e4658fce0c304e8c15b"
+                "reference": "524aac4a280b90a4420d8d6a040718d0586505ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/7a14736fb179876575464e4658fce0c304e8c15b",
-                "reference": "7a14736fb179876575464e4658fce0c304e8c15b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/524aac4a280b90a4420d8d6a040718d0586505ac",
+                "reference": "524aac4a280b90a4420d8d6a040718d0586505ac",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
@@ -7107,11 +8002,11 @@
                 "symfony/translation-contracts": "<2.5"
             },
             "require-dev": {
-                "symfony/error-handler": "^5.4|^6.0|^7.0",
-                "symfony/http-client": "^5.4|^6.0|^7.0",
-                "symfony/intl": "^6.2|^7.0",
+                "symfony/error-handler": "^6.4|^7.0",
+                "symfony/http-client": "^6.4|^7.0",
+                "symfony/intl": "^6.4|^7.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
-                "symfony/var-exporter": "^5.4|^6.0|^7.0"
+                "symfony/var-exporter": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -7150,7 +8045,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.4.3"
+                "source": "https://github.com/symfony/string/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -7166,7 +8061,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-25T09:26:29+00:00"
+            "time": "2024-01-29T15:41:16+00:00"
         },
         {
             "name": "symfony/translation",
@@ -7552,6 +8447,73 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
             },
             "time": "2023-12-08T13:03:43+00:00"
+        },
+        {
+            "name": "vinkla/hashids",
+            "version": "11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinkla/laravel-hashids.git",
+                "reference": "5fbdbf21c432a877c281f396dc65da39a910aed2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinkla/laravel-hashids/zipball/5fbdbf21c432a877c281f396dc65da39a910aed2",
+                "reference": "5fbdbf21c432a877c281f396dc65da39a910aed2",
+                "shasum": ""
+            },
+            "require": {
+                "graham-campbell/manager": "^5.0",
+                "hashids/hashids": "^5.0",
+                "illuminate/contracts": "^10.0",
+                "illuminate/support": "^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^4.0",
+                "graham-campbell/testbench": "^6.0",
+                "mockery/mockery": "^1.5",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.0-dev"
+                },
+                "laravel": {
+                    "aliases": {
+                        "Hashids": "Vinkla\\Hashids\\Facades\\Hashids"
+                    },
+                    "providers": [
+                        "Vinkla\\Hashids\\HashidsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vinkla\\Hashids\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@doubledip.se"
+                }
+            ],
+            "description": "A Hashids bridge for Laravel",
+            "keywords": [
+                "hashids",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/laravel-hashids/issues",
+                "source": "https://github.com/vinkla/laravel-hashids/tree/11.0.0"
+            },
+            "time": "2023-02-26T18:30:57+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -10078,28 +11040,27 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "d75715985f0f94f978e3a8fa42533e10db921b90"
+                "reference": "2d4fca631c00700597e9442a0b2451ce234513d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/d75715985f0f94f978e3a8fa42533e10db921b90",
-                "reference": "d75715985f0f94f978e3a8fa42533e10db921b90",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/2d4fca631c00700597e9442a0b2451ce234513d3",
+                "reference": "2d4fca631c00700597e9442a0b2451ce234513d3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
-                "symfony/deprecation-contracts": "^2.5|^3",
+                "php": ">=8.2",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
-                "symfony/console": "<5.4"
+                "symfony/console": "<6.4"
             },
             "require-dev": {
-                "symfony/console": "^5.4|^6.0|^7.0"
+                "symfony/console": "^6.4|^7.0"
             },
             "bin": [
                 "Resources/bin/yaml-lint"
@@ -10130,7 +11091,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v6.4.3"
+                "source": "https://github.com/symfony/yaml/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -10146,7 +11107,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "theseer/tokenizer",
