@@ -4,7 +4,7 @@ namespace App\Models\Lunar;
 
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Collection extends \Lunar\Models\Collection
+class Collection extends \Dystcz\LunarApi\Domain\Collections\Models\Collection /*\Lunar\Models\Collection*/
 {
     use InteractsWithMedia;
 

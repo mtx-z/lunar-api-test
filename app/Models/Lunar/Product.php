@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Lunar\Models\Price;
 use Lunar\Models\ProductVariant;
 
-class Product extends \Lunar\Models\Product
+class Product extends \Dystcz\LunarApi\Domain\Products\Models\Product /*\Lunar\Models\Product*/
 {
 
 

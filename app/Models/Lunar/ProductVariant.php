@@ -2,7 +2,7 @@
 
 namespace App\Models\Lunar;
 
-class ProductVariant extends \Lunar\Models\ProductVariant
+class ProductVariant extends \Dystcz\LunarApi\Domain\ProductVariants\Models\ProductVariant /*\Lunar\Models\ProductVariant*/
 {
 
 }
