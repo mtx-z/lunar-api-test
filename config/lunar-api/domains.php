@@ -61,9 +61,8 @@ return [
     ],
 
     'brands' => [
-        'model' => Dystcz\LunarApi\Domain\Brands\Models\Brand::class,
-        //'lunar_model' => Lunar\Models\Brand::class,
-        'lunar_model' => \App\Models\Lunar\Brand::class,
+        'model' => App\Models\Lunar\Brand::class,
+        'lunar_model' => Lunar\Models\Brand::class,
         'policy' => Dystcz\LunarApi\Domain\Brands\Policies\BrandPolicy::class,
         'schema' => Dystcz\LunarApi\Domain\Brands\JsonApi\V1\BrandSchema::class,
         'resource' => Dystcz\LunarApi\Domain\Brands\JsonApi\V1\BrandResource::class,
@@ -120,9 +119,8 @@ return [
     ],
 
     'collections' => [
-        'model' => Dystcz\LunarApi\Domain\Collections\Models\Collection::class,
-        //'lunar_model' => Lunar\Models\Collection::class,
-        'lunar_model' => \App\Models\Lunar\Collection::class,
+        'model' => \App\Models\Lunar\Collection::class,
+        'lunar_model' => Lunar\Models\Collection::class,
         'policy' => Dystcz\LunarApi\Domain\Collections\Policies\CollectionPolicy::class,
         'schema' => Dystcz\LunarApi\Domain\Collections\JsonApi\V1\CollectionSchema::class,
         'resource' => Dystcz\LunarApi\Domain\Collections\JsonApi\V1\CollectionResource::class,
@@ -298,9 +296,8 @@ return [
     ],
 
     'products' => [
-        'model' => Dystcz\LunarApi\Domain\Products\Models\Product::class,
-        //'lunar_model' => Lunar\Models\Product::class,
-        'lunar_model' => \App\Models\Lunar\Product::class,
+        'model' => \App\Models\Lunar\Product::class,
+        'lunar_model' => Lunar\Models\Product::class,
         'policy' => Dystcz\LunarApi\Domain\Products\Policies\ProductPolicy::class,
         'schema' => Dystcz\LunarApi\Domain\Products\JsonApi\V1\ProductSchema::class,
         'resource' => Dystcz\LunarApi\Domain\Products\JsonApi\V1\ProductResource::class,
@@ -310,9 +307,8 @@ return [
     ],
 
     'product_variants' => [
-        'model' => Dystcz\LunarApi\Domain\ProductVariants\Models\ProductVariant::class,
-        //'lunar_model' => Lunar\Models\ProductVariant::class,
-        'lunar_model' => \App\Models\Lunar\ProductVariant::class,
+        'model' => \App\Models\Lunar\ProductVariant::class,
+        'lunar_model' => Lunar\Models\ProductVariant::class,
         'policy' => Dystcz\LunarApi\Domain\ProductVariants\Policies\ProductVariantPolicy::class,
         'schema' => Dystcz\LunarApi\Domain\ProductVariants\JsonApi\V1\ProductVariantSchema::class,
         'resource' => Dystcz\LunarApi\Domain\ProductVariants\JsonApi\V1\ProductVariantResource::class,
